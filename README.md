@@ -1,4 +1,4 @@
-# dit-front-end
+# dr1-front-end
 
 ## Project setup
 ```

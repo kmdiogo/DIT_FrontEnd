@@ -1,5 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap-vue/src/index';
+@import './transitions-animations.scss';
 
 .nob{
 
@@ -18,9 +19,7 @@
 
 }
 
-.DnDPic{
-  text-align: center;
-}
+
 
 body{
   background-image: radial-gradient(white, black);

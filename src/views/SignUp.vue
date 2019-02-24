@@ -7,7 +7,8 @@
         <br>
         PASSWORD: <b-input v-model="form.password" class = "nob"></b-input>
         <br>
-        <b-button @click="submitForm" style="padding: 10px 25px;">Submit</b-button>
+        <b-button @click="submitForm" class="signUpButton" id="signUpPC">Sign up as player character</b-button>
+        <b-button @click="submitForm" class="signUpButton" id="signUpDM">Sign up as dungeon master</b-button>
         <br>
 
 

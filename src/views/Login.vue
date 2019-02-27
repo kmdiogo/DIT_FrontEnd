@@ -25,6 +25,7 @@
 
 <script>
     import axios from 'axios';
+    import {getAuthorizationToken} from '@/API';
     export default {
         name: "Login",
         data() {
@@ -37,7 +38,7 @@
         },
         methods: {
             submitForm() {
-                axios.post('localhost:8000/get-auth-token', this.form).then(response=>{
+                getAuthorizationToken(this.form).then(response=>{
                     console.log(response);
                 });
             }

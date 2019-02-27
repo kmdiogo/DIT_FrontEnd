@@ -1,12 +1,8 @@
 import axios from 'axios';
-let API = axios.create({
-    headers: {
-        post: {        // can be common or any other method
-            header1: 'value1'
-        }
-    }
+let HTTP = axios.create({
+    baseURL: 'http://localhost:8000'
 });
 
-export default {
-
+export function getAuthorizationToken(credentials) {
+    return HTTP.post('get-auth-token');
 }

@@ -1,21 +1,36 @@
 <template>
     <div style = "text-align: center; font-family: 'Fondamento', cursive;">
-        <br>
-        <h1 class = "tit">Please enter a Username and Password:</h1>
-        <br>
-        USERNAME: <b-input v-model="form.username" class = "nob"></b-input>
-        <br>
-        PASSWORD: <b-input v-model="form.password" class = "nob"></b-input>
-        <br>
-        EMAIL: <b-input v-model="form.email" class = "nob"></b-input>
-        <br>
-        FIRST NAME: <b-input v-model="form.first_name" class = "nob"></b-input>
-        <br>
-        LAST NAME: <b-input v-model="form.last_name" class = "nob"></b-input>
-        <br>
-        DM: <b-checkbox v-model ="form.is_dm" class = "nob"></b-checkbox>
-        <br>
-        Session ID <b-input type = "number" v-model="form.dm_session_id" class = "nob"></b-input>
+        <h1 class = "tit">Please enter the following information</h1>
+        <hr />
+        <b-form>
+            <b-form-group label="USERNAME:">
+                <b-input v-model="form.username" class = "nob"></b-input>
+            </b-form-group>
+
+            <b-form-group label="PASSWORD">
+                <b-input v-model="form.password" class = "nob" type="password"></b-input>
+            </b-form-group>
+
+            <b-form-group label="EMAIL">
+                <b-input v-model="form.email" class = "nob" type="email"></b-input>
+            </b-form-group>
+
+            <b-form-group label="FIRST NAME:">
+                <b-input v-model="form.first_name" class = "nob"></b-input>
+            </b-form-group>
+
+            <b-form-group label="LAST NAME:">
+                <b-input v-model="form.last_name" class = "nob"></b-input>
+            </b-form-group>
+
+            <b-form-group label="Are you a Dungeon Master?:">
+                <b-checkbox v-model ="form.is_dm" class = "nob"></b-checkbox>
+            </b-form-group>
+
+            <b-form-group label="SESSION ID">
+                <b-input type = "number" v-model="form.dm_session_id" class = "nob"></b-input>
+            </b-form-group>
+        </b-form>
         <br>
         <b-button @click="submitForm" class="signUpButton" id="signUpPC">Sign up as player character</b-button>
         <b-button @click="submitForm" class="signUpButton" id="signUpDM">Sign up as dungeon master</b-button>

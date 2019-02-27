@@ -1,5 +1,5 @@
 <template>
-    <div style = "text-align: center; font-family: 'Fondamento', cursive;">
+    <div>
         <br>
         <b-row>
             <b-col md="6">

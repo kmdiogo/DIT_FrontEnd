@@ -1,6 +1,8 @@
 <template>
     <div style = "text-align: center; font-family: 'Fondamento', cursive;">
-        <h1 class = "tit">Please enter the following information</h1>
+        <b-button to="/">Back to login</b-button>
+        <br />
+        <h1 class = "tit">Please enter the following information:</h1>
         <hr />
         <b-form>
             <b-form-group label="USERNAME:">
@@ -32,8 +34,8 @@
             </b-form-group>
         </b-form>
         <br>
-        <b-button @click="submitForm" class="signUpButton" id="signUpPC">Sign up as player character</b-button>
-        <b-button @click="submitForm" class="signUpButton" id="signUpDM">Sign up as dungeon master</b-button>
+        <b-button @click="submitForm" class="signUpButton" id="signUpDM">Sign up</b-button>
+        <!--<b-button @click="submitForm" class="signUpButton" id="signUpDM">Sign up as dungeon master</b-button>-->
         <br>
     <router-view></router-view>
 

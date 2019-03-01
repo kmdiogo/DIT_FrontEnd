@@ -1,49 +1,86 @@
 <template>
     <div>
         <br>
-        <b-row>
-            <b-col md="6">
-                Character Name:<b-input v-model="form.character_name" class = "nob"></b-input>
-                <br>
-                Class:<b-input v-model="form.class" class = "nob"></b-input>
-                <br>
-                Race:<b-input v-model="form.race" class = "nob"></b-input>
-                <br>
-                Height:<b-input v-model="form.height" class = "nob"></b-input>
-                <br>
-                Weight:<b-input v-model="form.weight" class = "nob"></b-input>
-                <br>
-                Age:<b-input v-model="form.age" class = "nob"></b-input>
-                <br>
-                Max Health:<b-input v-model="form.character_max_health" class = "nob"></b-input>
-                <br>
-                Level:<b-input v-model="form.character_level" class = "nob"></b-input>
-                <br>
+        <b-form>
+            <b-row>
+                <b-col md="6">
+                    <b-form-group label="Character Name:">
+                        <b-input v-model="form.character_name"></b-input>
+                    </b-form-group>
 
+                    <b-form-group label="Class:">
+                        <b-input v-model="form.class"></b-input>
+                    </b-form-group>
 
-            </b-col>
+                    <b-form-group label="Race:">
+                        <b-input v-model="form.race"></b-input>
+                    </b-form-group>
 
-            <b-col md="6">
-                Armor Class:<b-input v-model="form.character_armor_class" class = "nob"></b-input>
-                <br>
-                Alignment:<b-input v-model="form.alignment" class = "nob"></b-input>
-                <br>
-                Speed:<b-input v-model="form.speed" class = "nob"></b-input>
-                <br>
-                Strength:<b-input v-model="form.strength" class = "nob"></b-input>
-                <br>
-                Dexterity:<b-input v-model="form.dexterity" class = "nob"></b-input>
-                <br>
-                Constitution:<b-input v-model="form.constitution" class = "nob"></b-input>
-                <br>
-                Intelligence:<b-input v-model="form.intelligence" class = "nob"></b-input>
-                <br>
-                Wisdom:<b-input v-model="form.wisdom" class = "nob"></b-input>
-                <br>
+                    <b-form-group label="Height:">
+                        <b-input v-model="form.height"></b-input>
+                    </b-form-group>
 
-            </b-col>
-        </b-row>
-        Charisma:<b-input v-model="form.charisma" class = "nob"></b-input>
+                    <b-form-group label="Weight:">
+                        <b-input v-model="form.weight"></b-input>
+                    </b-form-group>
+
+                    <b-form-group label="Age:">
+                        <b-input v-model="form.age" type="number"></b-input>
+                    </b-form-group>
+
+                    <b-form-group label="Max Health:">
+                        <b-input v-model="form.character_max_health" type="number"></b-input>
+                    </b-form-group>
+
+                    <b-form-group label="Level:">
+                        <b-input v-model="form.character_level" type="number"></b-input>
+                    </b-form-group>
+
+                </b-col>
+
+                <b-col md="6">
+                    <b-form-group label="Armor Class:">
+                        <b-input v-model="form.character_armor_class" type="number"></b-input>
+                    </b-form-group>
+
+                    <b-form-group label="Alignment:">
+                        <b-input v-model="form.alignment"></b-input>
+                    </b-form-group>
+
+                    <b-form-group label="Speed:">
+                        <b-input v-model="form.speed" type="number"></b-input>
+                    </b-form-group>
+
+                    <b-form-group label="Strength:">
+                        <b-input v-model="form.strength" type="number"></b-input>
+                    </b-form-group>
+
+                    <b-form-group label="Dexterity:">
+                        <b-input v-model="form.dexterity" type="number"></b-input>
+                    </b-form-group>
+
+                    <b-form-group label="Constitution:">
+                        <b-input v-model="form.constitution" type="number"></b-input>
+                    </b-form-group>
+
+                    <b-form-group label="Intelligence:">
+                        <b-input v-model="form.intelligence" type="number"></b-input>
+                    </b-form-group>
+
+                    <b-form-group label="Wisdom:">
+                        <b-input v-model="form.wisdom" type="number"></b-input>
+                    </b-form-group>
+
+                </b-col>
+            </b-row>
+
+            <b-form-group label="Charisma">
+                <div class="d-flex align-items-center justify-content-center">
+                    <b-input v-model="form.charisma" type="number" class="w-50 align-items-center"></b-input>
+                </div>
+            </b-form-group>
+        </b-form>
+
         <br>
     </div>
 </template>
